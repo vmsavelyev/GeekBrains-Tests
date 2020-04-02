@@ -4,4 +4,4 @@ sec = int(input('введите секунды '))
 
 hour = str (hourSec // 3600)
 min = minSec // 60
-print(f'0{hour}: 0{min}: {sec}')
+print(f'0{hour}:0{min}:{sec}')
