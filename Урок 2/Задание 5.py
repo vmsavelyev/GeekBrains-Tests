@@ -1,7 +1,16 @@
-my_list = [1, 728, 2, 5, 6, 67 , 765, 3847, 323, 44, 2, 6, 6, 6]
-my_list.append(int(input('Ввидите значения через запятую ')))
-my_list.sort()
-my_list.reverse()
+number = int(input("Enter number: "))
+my_list = [7, 4, 3, 2]
+c = my_list.count(number)
+for element in my_list:
+    if c > 0:
+        i = my_list.index(number)
+        my_list.insert(i + c, number)
+        break
+    else:
+        if number > element:
+            j = my_list.index(element)
+            my_list.insert(j, number)
+            break
+        elif number < my_list[len(my_list) - 1]:
+            my_list.append(number)
 print(my_list)
-
-

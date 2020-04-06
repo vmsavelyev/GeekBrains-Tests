@@ -1,8 +1,8 @@
 my_list = input('Ввидите значения через запятую ')
 my_list = my_list.split(',')
 print(my_list)
-#print(f"Ваш оригинальный список - {my_list}")
-f = len(my_list)%2
+# print(f"Ваш оригинальный список - {my_list}")
+f = len(my_list) % 2
 if f == 0:
     i = 0
     while i < len(my_list):
