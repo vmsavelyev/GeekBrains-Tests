@@ -23,11 +23,11 @@
 
 class StoreMashines:
 
-    def __init__(self, name, price, quantity, number_of_lists, *args):
+    def __init__(self, name, price, quantity, number_lists, *args):
         self.name = name
         self.price = price
         self.quantity = quantity
-        self.numb = number_of_lists
+        self.numb = number_lists
         self.my_store_full = []
         self.my_store = []
         self.my_unit = {'Модель устройства': self.name, 'Цена за ед': self.price, 'Количество': self.quantity}
@@ -72,9 +72,9 @@ class Copier(StoreMashines):
         return f'to copier smth  {self.numb} times'
 
 
-unit_1 = Printer('hp', 2000, 5, 10)
-unit_2 = Scanner('Canon', 1200, 5, 10)
-unit_3 = Copier('Xerox', 1500, 1, 15)
+unit_1 = Printer('Фундервафля', 200, 25, 1023)
+unit_2 = Scanner('Canon', 1320, 54, 10)
+unit_3 = Copier('Xerox', 10203, 76, 15)
 print(unit_1.reception())
 print(unit_2.reception())
 print(unit_3.reception())
